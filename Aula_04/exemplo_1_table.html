@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+	<head>
+		<meta charset = "UTF-8">
+		<title> Exemplo 1 - Tabela</title>
+	</head>
+	<body>
+		<!-- table -> tabela -->
+		<!-- Iniciando a tabela -->
+		<table border = "1" width = "100%">
+			<!-- thead-> table head -> cabeçalho da tabela -->
+			<thead style = "background-color: blue; color: #ffffff;">
+				
+				<!-- Criando a primeira linha -->
+				<!-- linha da tabela -> table row -> tr -->
+				<tr>
+					<!-- th -> table head -> cabeçalho -->
+					<th> Disciplina </th>
+					<th> Nota 1 </th>
+					<th> Nota 2 </th>
+					<th> Nota 3 </th>
+					<th> Nota 4 </th>
+					<th> Média</th>
+				</tr>
+				
+			</thead>
+			<!-- thead-> table head -> cabeçalho da tabela -->
+			<tbody> 
+				<!-- Criando a primeira linha -->
+				<!-- linha da tabela -> table row -> tr -->
+				<tr>
+					<!-- td -> table data -> dados da tabela -->
+					<td> Matemática </td>
+					<td> 10,0 </td>
+					<td> 9,0 </td>
+					<td> 8,0</td>
+					<td> 7,0 </td>				
+					<td> 8,5</td>
+				
+				</tr>
+				<!-- Criando a primeira linha -->
+				<tr>
+					<td> Portugûes </td>
+					<td> 9,5 </td>
+					<td> 10,0</td>
+					<td> 8,0 </td>
+					<td> 8,5 </td>
+					<td> 9,0 </td>
+				</tr>
+				
+				<!-- Criando a quarta linha -->
+				<tr>
+					<!-- COLSPAN -> Mesclar colunas -->
+					<th colspan ="6" style = "background-color: red; color: white">  SENAI </th>
+				</tr>
+				
+				<! -- Criando a quinta linha -->
+				<tr>
+					<th> Disciplina </th>
+					<th colspan = "2"> 1º Semestre </th>
+					<th colspan = "2"> 2º Semestre </th>
+					<th> Média </th>
+				</tr>
+				
+				<! -- Criando a sexta linha -->
+				<tr>
+					<td> Lógica de Programação </td>
+					<td> 9,0 </td>
+					<td> 9,0 </td>
+					<!-- rowspan -> mesclar linhas -->
+					<td rowspan = "2"> - </td>
+					<td rowspan = "2"> - </td>
+					<td> 9,0 </td>
+				</tr>
+				
+				<! -- Criando a sétima linha -->
+				<tr>
+					<td> Levantamento de Requisitos </td>
+					<td> 9,0 </td>
+					<td> 8,0 </td>
+					<!-- Temos que apagar as linhas que são mescladas -->
+					<!-- <td> - </td> -->
+					<!-- <td> - </td> -->
+					<td> 8,5 </td>
+				</tr>
+				<!-- Criando a oitava linha -->
+				<tr>
+					<td>Banco de Dados </td>
+					<td rowspan = "2"> - </td>
+					<td rowspan = "2"> - </td>
+					<td> 8,0 </td>
+					<td> 10,0 </td>
+					<td> 9,0 </td>
+				</tr>
+				<!-- Criando a nona linha -->
+				<tr style = "background-image: url ('https://cdn.pixabay.com/photo/2016/07/17/01/53/background-1523105_960_720.jpg_');">
+					<td> Linguagem de marcação </td>
+					<!-- <td> - </td> -->
+					<!-- <td> - </td> -->
+					<!-- Temos que apagar as linhas que são mescladas -->
+					<td> 10,0 </td>
+					<td> 10,0</td>
+					<td> 10,0 </td>
+				</tr>
+				<!-- Criando a décima linha -->
+				<tr>
+					<th colspan = "5"> Média total </th>
+					<th> 9,0 </th>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
