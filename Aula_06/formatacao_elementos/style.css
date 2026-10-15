@@ -1,0 +1,122 @@
+*{
+    margin: 0; /* Espaço Externo*/
+    padding: 0; /* Espaço Interno*/
+    font-family: Arial;
+}
+main{
+    /* borda sólida de 1px na cor cinza */
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 35px;
+    /* Espaço externo - entre o elemento e a borda */
+    margin: 35px;
+         /* Espaço interno - entre o elemento e a borda */
+    padding: 10px;
+    background-color: white;
+}
+
+body{
+    background-color: #c74bd4;
+}
+
+h1{
+     /* Espaço interno - entre o elemento e a borda */
+    padding: 8px;
+    text-align: center;
+    color: #4caf50;
+    /* Transforma em letra maiúscula */
+    text-transform: uppercase;
+}
+#texto{
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+#texto:hover{
+    color: #32bf1d;
+    font-size: 20px;
+}
+.primeiro{
+    color: #5d2424
+}
+/* Mudar a cor do link ao passar o mouse */
+.primeiro:hover{
+    color: #ffcc00;
+}
+
+.segundo:hover{
+    font-size: 150%;
+}
+
+.terceiro:hover{
+    background-color: #fc8eac;
+}
+
+.quarto:hover{
+    font-family: monospace;
+}
+
+.quinto:hover{
+    text-decoration: none;
+}
+
+img{
+     width: 50%;
+     /* Técnica para Centralizar Tudo */
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+#article-central{
+    border: 1px solid gray;
+    padding: 50px;
+    background-color: #708090;
+    color: white;   
+}
+
+ul.a{
+    list-style: square;
+}
+
+.b li{
+    font-family: 'Courier New';
+}
+
+ol.c{
+    list-style-type: upper-roman;
+}
+
+ol.d{
+    list-style-type: lower-greek;
+}
+
+#tabela-estilosa{
+    font-family: Arial;
+    border-collapse: collapse; /* borda com uma única linha*/
+    width: 100%;
+}
+
+#tabela-estilosa td, #tabela-estilosa th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabela-estilosa tr:nth-child(even){ /* linha zebrada, cada linha de uma cor */
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#tabela-estilosa tr:hover{ /*mudar a cor se o cursor estiver em cima */
+    background-color: #8379a7;
+    color: #efefef;
+}
+
+#tabela-estilosa th{
+    padding-top: 12px;
+    padding-bottom: 20px;
+background: #2aabde;
+background: linear-gradient(90deg, rgba(42, 171, 222, 1) 0%, rgba(87, 189, 130, 1) 46%, rgba(214, 161, 17, 1) 66%, rgba(235, 0, 0, 1) 100%);
+}
