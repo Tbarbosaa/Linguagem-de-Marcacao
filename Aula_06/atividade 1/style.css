@@ -1,0 +1,16 @@
+*{
+    margin: 0; /* Espaço Externo*/
+    padding: 0; /* Espaço Interno*/
+    font-family: Arial;
+}
+
+main{
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.6;
+    text-indent: 30px;
+    text-shadow: 2px 2px 5px #aaa;
+}
