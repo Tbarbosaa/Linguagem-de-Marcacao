@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+ul{
+    list-style: none;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+}
+
+li a.active{
+    background-color: #FF0000;
+    color: white;
+}
+
+li a:hover{
+    background-color: #2b2a2a;
+    color: #fff;
+}
+
+li a.active:hover{
+    background-color: #df1d3a;
+    color: #fff;
+}
+
+.principal{
+    margin-left: 25%;
+    padding: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 30px;
+    padding-bottom: 30px;
+}
+
+.i-principal{
+    width: 47%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagens{
+    width: 30%;
+    height: 235px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.principal-contato{
+    margin-left: 25%;
+    padding: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 30px;
+    padding-bottom: 30px;
+}
+
+form{
+    margin-left: 30px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+
+input{
+    padding: 8px;
+    width: 97%;
+    border-radius: 11px;
+}
+
+textarea{
+    border-radius: 11px;
+}
+
+
+.enviar {
+  padding: 1em 2em;
+  border: none;
+  border-radius:7px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #df1d3a;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #df1d3a;
+}
+
+button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #df1d3a;
+  box-shadow: 4px 5px 17px -4px #820c03;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #df1d3a;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+iframe{
+    border-radius: 16px;
+}
