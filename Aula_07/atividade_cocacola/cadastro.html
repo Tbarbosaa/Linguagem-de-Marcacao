@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang =  "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Menu horizontal </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href = "inicial.html"> Inicío</a></li>
+                    <li  class = "active" class = "dropdown"> 
+                        <a href = "javascript:void(0)" class = "dropbtn"><i class = "fa fa-angle-down"></i> Peças </a>
+                        <div class = "dropdown-content">
+                            <a href = "cadastro.html"> Cadastro de Produtos </a>
+                            <a  href = "produtos.html"> Produtos Cadastrados </a>
+                        </div>
+                    </li>                  
+                </ul>
+            </nav>
+        </header>
+        <main class = "principal">
+            <form action="#" method="post">
+                <img class = "img-coca"src = "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/960px-Coca-Cola_logo.svg.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail">
+                <br> <br><br>
+                <h2> 1. Informações do Produto </h2>
+                <label> Nome do produto: </label> <br>
+                <input type = "text" name = "nome" placeholder="Nome do Produto . . ." required>
+                <br><br>
+                <label> Codigo do produto: </label> <br>
+                <input type = "text" name = "codigo" placeholder="Codigo do Produto . . ." required>
+                <br><br>
+                <label> Categoria do Produto: </label> <br>
+                <select>
+                    <option> Selecione ... </option>
+                    <option> Refrigerantes</option>
+                    <option> Sucos </option>
+                    <option> Águas </option>
+                    <option> Chás </option>
+                    <option> Bebidas Esportivas </option>
+                    <option> Energéticos </option>
+                </select>
+                <br><br>
+                <label> Marca: </label> <br>
+                <select>
+                    <option> Selecione . . .</option>
+                    <option> Coca Cola</option>
+                    <option> Fanta</option>
+                    <option> Sprite</option>
+                    <option> Schewepps </option>
+                    <option> DelValle </option>
+                    <option> Powerade</option>
+                    <option> Crystal</option>
+                </select>
+                <br><br>
+                <label> Descrição do produto:</label> <br>
+                <textarea placeholder=" Descrição . . ."> </textarea>
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 2. Preço e estoque </h2>
+                <br><br>
+                <label> Preço do produto: </label> <br>
+                <input type = "number" name = "preco" placeholder="Preço do Produto . . ." required step="0.01">
+                <br><br>
+                <label> Preço promocional : </label> <br>
+                <input type = "number" name = "preco_promo"  step="0.01">
+                <br><br>
+                <label> Estoque do produto: </label> <br>
+                <input type = "number" name = "qtd" placeholder="Quantidade do Produto . . ." required min="0">
+                <br><br>
+                <label> Estoque mínimo: </label> <br>
+                <input type = "number" name = "qtd_min" required min="0">
+                <br><br>
+                <label> Desconto máximo permitido: </label> <br>
+                <input type = "range" name = "desc_max" placeholder="Quantidade do Produto . . ." step = "5" min="0" max = '100'>
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 3. Características do Produto</h2>
+                <br><br>
+                <label> Características da Bebida </label> <br><br>
+
+                <input type = "checkbox" name = "carac_bebida" value = "sem_acucar" >
+                <label> Sem Açúcar</label>
+                <br>
+                <input type = "checkbox" name = "carac_bebida" value = "baixa_caloria" >
+                <label> Baixa Caloria</label>
+                <br>
+                <input type = "checkbox" name = "carac_bebida" value = "sem_gás" >
+                <label> Com Gás</label>
+                <br>
+                <input type = "checkbox" name = "carac_bebida" value = "com_gás" >
+                <label> Sem Gás</label>
+                <br>
+                <input type = "checkbox" name = "carac_bebida" value = "com_caloria" >
+                <label> Com caloria</label>
+                <br>
+                <input type = "checkbox" name = "carac_bebida" value = "sem_caloria" >
+                <label> Sem Caloria</label>
+                <br>
+                <input type = "checkbox" name = "carac_bebida" value = "retornavel" >
+                <label> Embalagem retornável </label>
+                <br><br>
+
+                <label> Tipo de embalagem </label> <br><br>
+
+                <input type = "radio" name = "carac_embalagem" value = "lata" >
+                <label> Lata </label>
+                <br>
+                <input type = "radio" name = "carac_embalagem" value = "lata" >
+                <label> Garrafa PET </label>
+                <br>
+                <input type = "radio" name = "carac_embalagem" value = "lata" >
+                <label> Garrafa Vidro </label>
+                <br>
+                <input type = "radio" name = "carac_embalagem" value = "lata" >
+                <label> Caixa </label>
+                <br><br>
+
+                <label> Embalagem : </label> <br>
+                <select>
+                    <option> Selecione</option>
+                    <option> 200ml</option>
+                    <option> 250ml</option>
+                    <option> 310ml</option>
+                    <option> 350ml</option>
+                    <option> 500ml</option>
+                    <option> 600ml</option>
+                    <option> 1 Litro</option>
+                    <option> 1.5 Litros</option>
+                    <option> 2 Litros</option>
+                    <option> 3 Litros</option>
+                </select>
+                <br><br>
+                <label> Peso do Produto</label>
+                <input type="number" step = "0.1" min = "0">
+                <br><br>
+                <label> Cor Predominante da Embalagem</label>
+                <input type="color" value = "#E61D2B">
+            </form>

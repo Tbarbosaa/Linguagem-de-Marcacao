@@ -1,0 +1,124 @@
+/* Página Inicial */
+*{
+    margin: 0px;
+    padding:  0px;
+    font-family: Arial;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+.active{
+    background-color:#E61D2B ;
+}
+
+.active:hover{
+    background-color: #f00e30;
+}
+
+.principal{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+p{
+    margin-bottom: 15px;
+    line-height: 1,5;
+}
+
+.img-fabrica{
+    width: 31%;
+}
+
+.img-coca{
+    width: 25%;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px #000;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #d41017;
+    color: #fff
+}
+
+.area_tabela{
+    margin-left: 30px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+
+table{
+    width: 100%;
+}
+
+.cabecalho_tabela{
+    text-align: center;
+    background-color: #E61D2B;
+    color: #fff;
+}
+ol{
+    float: left;
+    margin: 20px 20px 60px 15px;
+}
+
+.linha-tabela{
+    background-color: #FFBFB9;
+    line-height: 1,5;
+}
+
+form{
+    margin-left: 30px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #f1f1f1;
+}
