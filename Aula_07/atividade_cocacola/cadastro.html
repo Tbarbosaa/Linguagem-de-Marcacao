@@ -2,7 +2,7 @@
 <html lang =  "pt-br">
     <head>
         <meta charset = "UTF-8">
-        <title> Menu horizontal </title>
+        <title> Cadastro de Produtos </title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
@@ -56,7 +56,7 @@
                 </select>
                 <br><br>
                 <label> Descrição do produto:</label> <br>
-                <textarea placeholder=" Descrição . . ."> </textarea>
+                <textarea  rows="5" cols = "50" placeholder=" Descrição . . ."></textarea>
                 <br><br>
                 <hr>
                 <br><br>
@@ -142,4 +142,161 @@
                 <br><br>
                 <label> Cor Predominante da Embalagem</label>
                 <input type="color" value = "#E61D2B">
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 4. Fabricação e Validade</h2>
+                <br><br>
+                <label> Data de Fabricação: </label> <br>
+                <input type="date">
+                <br><br>
+                <label> Data de validade: </label> <br>
+                <input type="date">
+                <br><br>
+                <label> Hora de Fabricação: </label> <br>
+                <input type="time">
+                <br><br>
+                <label> Mês de lançamento do Produto: </label> <br>
+                <input type="month">
+                <br><br>
+                <label> Número de lote: </label> <br>
+                <input type="text" placeholder=" Ex: LT2026001"">
+                <br><br>
+                <label> País de Fabricação</label> <br>
+                <select>
+                    <option> Selecione </option>
+                    <option> Brasil </option>
+                    <option> Argentina </option>
+                    <option> Chile </option>
+                    <option> México </option>
+                    <option> Estados Unidos </option>
+                    <option> Outros </option>
+                </select>
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 5. Informações Nutricionais</h2>
+                <br><br>
+                <label> Quantidade de Calorias: </label> <br>
+                <input type="number" min = "0">
+                <br><br>
+                <label> Quantidade de Açúcar: </label> <br>
+                <input type="number" min = "0" step = "0.1">
+                <br><br>
+                <label> Quantidade de Sódio: </label> <br>
+                <input type="number" min = "0" step = "0.1">
+                <br><br>
+                <label> Quantidade de Cafeína: </label> <br>
+                <input type="number" min = "0" step = "0.1">
+                <br><br>
+                <label> Ingredientes:</label> <br>
+                <textarea  rows="5" cols = "50" placeholder=" Informe os Ingredientes . . ."></textarea>
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 6. Fornecedor e Distribuição </h2>
+                <br><br>
+                <label> Nome do Fornecedor: </label> <br>
+                <input type="text" placeholder="Nome do Fornecedor...">
+                <br><br>
+                <label> Email do Fornecedor: </label> <br>
+                <input type="email" placeholder="email@empresa.com">
+                <br><br>
+                <label> Telefone do Fornecedor: </label> <br>
+                <input type="tel" placeholder="(00) 00000-0000">
+                <br><br>
+                <label> Site do Fornecedor: </label> <br>
+                <input type="url" placeholder ="https://www.exemplo.com"">
+                <br><br>
+                <label> Estado de Distribuição</label> <br>
+                <select>
+                    <option> Selecione </option>
+                    <option> São Paulo </option>
+                    <option> Rio de Janeiro </option>
+                    <option> Minas Gerais </option>
+                    <option> Paraná </option>
+                    <option> Santa Catarina </option>
+                    <option> Rio Grande Do Sul </option>
+                    <option> Outros ... </option>
+                </select>
+                <br><br>
+                <label> Cidade de Distribuição: </label> <br>
+                <input type="text" placeholder="Cidade ...">
+                <br><br>
+                <label> CEP do centro de Distribuição: </label> <br>
+                <input type="text" placeholder="00000-000">
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 7. Imagens e Documentos </h2>
+                <br><br>
+                <label> Imagem do Produto: </label> <br>
+                <input type="file" accept="image/*">
+                <br><br>
+                <label> Ficha Técnica do Produto: </label> <br>
+                <input type="file" accept=".pdf/*">
+                <br><br>
+                <label> Link da página do produto: </label> <br>
+                <input type="url" placeholder = "https://www.exemplo.com/produto">
+                <br><br>
+                <hr>
+                <br><br>
+
+                <h2> 8. Situação e Comercialização</h2>
+                <br><br>
+                <label> Situação do Produto </label>
+                <br>
+                <input type = "radio">
+                <label> Disponível </label>
+                <br>
+                <input type = "radio" >
+                <label> Indisponível </label>
+                <br>
+                <input type = "radio">
+                <label> Descontinuado </label>
+                <br><br>
+
+                <label> Canais de Venda </label>
+                <br>
+                <input type = "checkbox">
+                <label> Supermercados </label>
+                <br>
+                <input type = "checkbox">
+                <label> Restaurantes </label>
+                <br>
+                <input type = "checkbox">
+                <label> Lojas de Coveniência </label>
+                <br>
+                <input type = "checkbox">
+                <label> Distribuidores </label>
+                <br>
+                <input type = "checkbox">
+                <label> Internet </label>
+                <br><br>
+
+                <label> Classificação de Vendas </label>
+                <br>
+                <input type = "radio">
+                <label> Alta </label>
+                <br>
+                <input type = "radio">
+                <label> Média </label>
+                <br>
+                <input type = "radio">
+                <label> Baixa </label>
+                <br><br>
+
+                <label> Observações adicionais:</label> <br>
+                <textarea rows="5" cols = "50" placeholder=" Digite as Observações Adicionais . . ."></textarea>
+                <br><br><br>
+                <input type = "checkbox" required>
+                <label> Confirmo que as informações cadastradas estão corretas</label>
+                <br><br>
+
+                <button type ="submit"> Cadastar Produto </button>
+                <button type ="reset"> Limpar Formulário </button>
             </form>
